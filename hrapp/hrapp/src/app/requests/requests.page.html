@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Requests</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="header-row">
+    <ion-button fill="clear" class="back-btn" routerLink="/tabs/home">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <h2 class="title">Solicitudes</h2>
+    <div class="header-spacer"></div>
+  </div>
+
+  <div class="form-image">
+    <img
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB03yj1WKQpkOt9QXgC7QYkze3c38-qE4n8jcxQWTATok3XWVJqWGGHED-ERm7Fz71kUxeymrO45YycG2nSJ1q1HOzwEiDtM3uGwNEj0iWzjP2af9dsG4ZFhGUvKrJYO044wJYehFqwP6MGvcRno9ip6oYS6jWTJfkwVz65juuByLBn6caQ2NgXknh_2eMyQPNAQzQXAxa9kscyfaZizG2vH27HG88DDr1eK2bBwu_kg3k1WcJe55dfOANf3astMnpdLsxUIf4DDvZI"
+      alt="Solicitud"
+    />
+  </div>
+
+  <div class="form-container">
+    <p class="form-title">Nueva solicitud</p>
+    <p class="form-subtitle">
+      Selecciona las fechas y el motivo de tu solicitud.
+    </p>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Fecha de inicio</label>
+        <div class="input-row">
+          <ion-input
+            [ngModel]="startDate"
+            (ngModelChange)="startDate = $event"
+            name="startDate"
+            placeholder="Selecciona una fecha"
+            type="date"
+            class="custom-input"
+            required
+          ></ion-input>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Fecha de fin</label>
+        <div class="input-row">
+          <ion-input
+            [ngModel]="endDate"
+            (ngModelChange)="endDate = $event"
+            name="endDate"
+            placeholder="Selecciona una fecha"
+            type="date"
+            class="custom-input"
+            required
+          ></ion-input>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Motivo</label>
+        <ion-textarea
+          [ngModel]="description"
+          (ngModelChange)="description = $event"
+          name="description"
+          placeholder="Escribe el motivo de tu solicitud"
+          class="custom-textarea"
+          required
+        ></ion-textarea>
+      </div>
+      <button type="submit" class="submit-btn">Enviar solicitud</button>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="header-row">
+    <ion-button fill="clear" class="back-btn" routerLink="/tabs/home">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <h2 class="title">Liquidaciones</h2>
+    <div class="header-spacer"></div>
+  </div>
+
+  <div class="months-list">
+    <div class="month-row" *ngFor="let month of months">
+      <span class="month-label">{{ month }}</span>
+      <button class="download-btn">Download</button>
+    </div>
+  </div>
+</ion-content>

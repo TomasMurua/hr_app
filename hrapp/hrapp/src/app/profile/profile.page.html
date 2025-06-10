@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="header-row">
+    <ion-button fill="clear" class="close-btn" routerLink="/tabs/home">
+      <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+    </ion-button>
+    <h2 class="title">Mi perfil</h2>
+    <div class="header-spacer"></div>
+  </div>
+
+  <div class="profile-container">
+    <div
+      class="profile-avatar"
+      style="
+        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJmb02jg2vcv2YzJ5CnD4h2zN8ZkDz1nqVVusNSHrB3VYo5LyfanMzBZUeIwBTzwqx9S7KgHpBxQC_HJntrP5oSpIEjMGse2X5w4gdBaaxNo7RdKmSmmDxEKwrMcx7vyqW3Fo6pyD2gIWnj2IsHZLiArY9nZ8nNuNp3XiP_cMvbdGhwTMOQNykD00wx0nS9KNbe54BovVuqeUSlEqGf3y48toSAGsxLxBPGlnYRPyhGIeehbuSbis_ySqUKgB7ubAX958BJY_ZLPrj');
+      "
+    ></div>
+    <div class="profile-info">
+      <p class="profile-name">Javier Rodriguez</p>
+      <p class="profile-rut">12.345.678-9</p>
+      <p class="profile-email">javier.rodriguez&#64;email.com</p>
+    </div>
+    <button class="logout-btn">Cerrar sesión</button>
+  </div>
+</ion-content>

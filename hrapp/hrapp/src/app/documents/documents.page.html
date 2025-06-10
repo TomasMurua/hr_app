@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="header-row">
+    <ion-button fill="clear" class="back-btn" routerLink="/tabs/home">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <h2 class="title">Documentos</h2>
+    <div class="header-spacer"></div>
+  </div>
+
+  <div class="documents-list">
+    <div class="document-row" *ngFor="let doc of documents">
+      <div class="icon-box">
+        <ion-icon name="document-text-outline"></ion-icon>
+      </div>
+      <div class="doc-info">
+        <p class="doc-title">{{ doc.title }}</p>
+        <p class="doc-date">{{ doc.date }}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

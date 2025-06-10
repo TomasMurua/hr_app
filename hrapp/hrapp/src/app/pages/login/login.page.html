@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="login-bg">
+    <div class="login-container">
+      <h1 class="login-title">HR App</h1>
+
+      <form (ngSubmit)="onSubmit()" class="login-form">
+        <ion-item class="login-input">
+          <ion-input
+            placeholder="23.040.124-1"
+            [(ngModel)]="rut"
+            name="rut"
+            type="text"
+            required
+            inputmode="text"
+          ></ion-input>
+          <ion-icon
+            slot="end"
+            name="checkmark-outline"
+            color="success"
+          ></ion-icon>
+        </ion-item>
+
+        <ion-item class="login-input">
+          <ion-input
+            placeholder="••••••••"
+            [(ngModel)]="password"
+            name="password"
+            type="password"
+            required
+          ></ion-input>
+        </ion-item>
+
+        <div class="forgot-link">
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+
+        <ion-button expand="block" type="submit" class="login-btn">
+          Iniciar sesión
+        </ion-button>
+
+        <ion-button
+          expand="block"
+          fill="outline"
+          class="cert-btn"
+          color="light"
+        >
+          Cert. Renta 2024 (ex-colaboradores)
+        </ion-button>
+      </form>
+
+      <div class="social-section">
+        <p class="social-title">Follow us on social media</p>
+        <div class="social-icons">
+          <div class="social-item">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <span>Facebook</span>
+          </div>
+          <div class="social-item">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <span>Instagram</span>
+          </div>
+          <div class="social-item">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <span>Twitter</span>
+          </div>
+          <div class="social-item">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <span>LinkedIn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-content>

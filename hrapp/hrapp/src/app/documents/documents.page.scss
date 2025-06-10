@@ -1,0 +1,91 @@
+// Documents page styles
+
+.custom-bg {
+  --background: #f8fcfb;
+  background: #f8fcfb;
+  font-family: "Manrope", "Noto Sans", sans-serif;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 16px 16px 8px 16px;
+  justify-content: space-between;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.back-btn {
+  color: #0e1b19;
+  font-size: 24px;
+  --padding-start: 0;
+  --padding-end: 0;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  color: #0e1b19;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.header-spacer {
+  width: 48px;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.document-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8fcfb;
+  padding: 8px 16px;
+  min-height: 72px;
+  border-radius: 12px;
+}
+
+.icon-box {
+  background: #e7f3f1;
+  color: #0e1b19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doc-title {
+  color: #0e1b19;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.doc-date {
+  color: #4e978b;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}

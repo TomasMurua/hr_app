@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home-bg">
+  <div class="home-header">
+    <div class="home-avatar-img"></div>
+    <h2 class="home-title">HR APP</h2>
+  </div>
+
+  <div class="home-banner">
+    <img
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmUFsoVvR6yvSpnZ6BiRA13m-Q2ckfnLj95uMt9uu_ieD7JPmvxeCqvVBTRNQoolmkCMDnB7XLPWtHWonakgOKrycZ7sqZK0T5j1k168heYyazc7vBxLVK_QvxkERXZ8sV559DYJ1secTWJwaVftq5vyiz4oq3tqgBc9x3JXQGV1OSLfn5DWVVnazmgki5KvKtbQNf6XcbJVmRpCwc2ToRkuZEUSsD_buVRaIlTQLeat14untLUzFMbXilrBpicGFz9INfN4FGQoia"
+      class="banner-img"
+    />
+  </div>
+
+  <h1 class="home-section-title">Conoce nuestra nueva Sección de Beneficios</h1>
+
+  <swiper [slidesPerView]="1.2" [spaceBetween]="16" class="home-cards">
+    <ng-template swiperSlide>
+      <div class="card-benefit">
+        <div
+          class="card-img-bg"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhhi8YZBEV7Arg3hi14gP8pBqNaucIiW6HG6R0e8aEAI9sG93iaPte0oJ9rrnpI6fC648HPqRWPqQNeqlzIcceNY21fMLQTZIYxr-0mK621uaroBzG71boRC7KNb5it-xkGigSXFGJ_ZvgZgbdb-JWCjC-jFgaZ65_rEOnMcUEWKIrax_uukbrEmAV24w_STXsonaeRlKBwZ-8QKJgmGoztwbp4fFwthpXspoaLw4O27e3zmhX9eX4qn-5YolvNiCzbetSGZ2AAfm-');
+          "
+        ></div>
+        <div>
+          <div class="card-title">Liquidaciones</div>
+          <div class="card-desc">View your pay slips</div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="card-benefit">
+        <div
+          class="card-img-bg"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClLHkSGijPfvniFlWAfoBm8oUl2Pi4OK-urqoA5JQbdwby1mF6b6C3gnH3Vxp52djoAcrOze9AcfE8id83djhrO18eVW6wGHZWHPknt8TLJs4UZN0HuJy-No1hKskSWMiUcYN3RTUT_fNHTaO4Vh9-m0b0lqeAc5HuCkWuFRVjb4TUL5zrNNDbzxCTZ2xDnksueky32hNzhXs0KsCHbLQZG7T21Z-593P1odV7CpX2B6iLNWdOPmq4I_wXUzWR9EICTc-QUEtqutUK');
+          "
+        ></div>
+        <div>
+          <div class="card-title">Certificados</div>
+          <div class="card-desc">View your certificates</div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="card-benefit">
+        <div
+          class="card-img-bg"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDU07VWdG8IQSh70qi_UfHE4Bg26huRmVxighil8FL3g41sA483cJZej8AMYO46_ppYDuWEBYtGcfTwT0_E6t7Wjn5fBtzwuU8JbY5UsW80JL1GOrncjELosHz36jw8JdMcFreskqXTFIDhZMIZ3WceWzsihDuNqW0sdlHlwKpV9i8JULRYxP_HqAFsb_clKkv0J4wH-t7rpTzoVxfLDNoMAo63mDw72Qt-TQysXM1n1PElfGt7IPaqDKlkdf6SjhEhtmdHwYrE1BhA');
+          "
+        ></div>
+        <div>
+          <div class="card-title">Beneficios</div>
+          <div class="card-desc">View your benefits</div>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</ion-content>
