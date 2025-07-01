@@ -8,7 +8,7 @@ import { Storage } from '@ionic/storage-angular';
 export class AuthGuard implements CanActivate {
   constructor(private storage: Storage, private router: Router) {}
 
-  canActivate(): Promise<boolean> {
+  canActivate(): Promise<boolean | import('@angular/router').UrlTree> {
     return this.storage.get('isLogged').then((val) => {
       if (val) {
         return true;

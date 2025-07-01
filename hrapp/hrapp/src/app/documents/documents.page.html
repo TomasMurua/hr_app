@@ -7,15 +7,15 @@
     <div class="header-spacer"></div>
   </div>
 
-  <div class="documents-list">
-    <div class="document-row" *ngFor="let doc of documents">
-      <div class="icon-box">
-        <ion-icon name="document-text-outline"></ion-icon>
-      </div>
-      <div class="doc-info">
-        <p class="doc-title">{{ doc.title }}</p>
-        <p class="doc-date">{{ doc.date }}</p>
-      </div>
-    </div>
-  </div>
+  <ion-list *ngIf="users.length">
+    <ion-item *ngFor="let u of users">
+      <ion-avatar slot="start">
+        <img src="https://i.pravatar.cc/80?img={{u.id}}" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{u.name}}</h2>
+        <p>{{u.email}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
