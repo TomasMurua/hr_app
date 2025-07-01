@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
 import { Camera, CameraResultType } from '@capacitor/camera';
 import { Storage } from '@ionic/storage-angular';
 
@@ -6,6 +7,8 @@ import { Storage } from '@ionic/storage-angular';
   selector: 'app-profile-photo',
   templateUrl: './profile-photo.component.html',
   styleUrls: ['./profile-photo.component.scss'],
+  standalone: true,
+  imports: [IonicModule],
 })
 export class ProfilePhotoComponent implements OnInit {
   avatar?: string;
