@@ -1,45 +1,60 @@
-<ion-header>
-  <ion-toolbar color="light">
-    <ion-title>Home</ion-title>
+<ion-header class="ion-no-border light-bg">
+  <ion-toolbar class="light-bg">
+    <!-- Avatar -->
+    <ion-buttons slot="start">
+      <ion-avatar class="profile-avatar">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR4kSyN8tfvYngKb9I0UHYBMGwOds_2aa4AAnUX5d45ognzcIpoaNsgCDGjWt1LoLHQRDDzcyB_NYyT5GG_ZmmWMnIcLIqLFybeFTm3K690HuX7KLx6pNIdHBXm8LrOxGhqqyNOs0VYQOz4FonEfXCXWVlen07rsFg5R94bmgj3g94e1eIZWxl8hrJrwQytMJ4PdE_fm-aJiXAc8VSG24ypN3z4l-vylsFKYvicy2jhgTs6dAwtppsdPc4w6jY6SPm5uF9M2C8wrLy"
+          alt="User"
+        />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-title>HR App</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-img src="assets/img/hero.jpg" class="hero"></ion-img>
+<ion-content class="home light-bg" fullscreen>
+  <!-- Hero Banner -->
+  <div class="hero-wrapper">
+    <ion-img
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmUFsoVvR6yvSpnZ6BiRA13m-Q2ckfnLj95uMt9uu_ieD7JPmvxeCqvVBTRNQoolmkCMDnB7XLPWtHWonakgOKrycZ7sqZK0T5j1k168heYyazc7vBxLVK_QvxkERXZ8sV559DYJ1secTWJwaVftq5vyiz4oq3tqgBc9x3JXQGV1OSLfn5DWVVnazmgki5KvKtbQNf6XcbJVmRpCwc2ToRkuZEUSsD_buVRaIlTQLeat14untLUzFMbXilrBpicGFz9INfN4FGQoia"
+      alt="Corporate banner"
+    ></ion-img>
+  </div>
 
-  <ion-list lines="none">
-    <ion-card button routerLink="/tabs/pay">
-      <ion-item lines="none">
-        <ion-avatar slot="start"><img src="assets/icons/pay.svg" /></ion-avatar>
-        <ion-label
-          ><h2>Liquidaciones</h2>
-          <p>View your pay slips</p></ion-label
-        >
-      </ion-item>
-    </ion-card>
+  <!-- Headline -->
+  <h1 class="section-title">Explore our new Benefits Section</h1>
 
-    <ion-card button routerLink="/tabs/documents">
-      <ion-item lines="none">
-        <ion-avatar slot="start"
-          ><img src="assets/icons/cert.svg"
-        /></ion-avatar>
-        <ion-label
-          ><h2>Certificados</h2>
-          <p>View your certificates</p></ion-label
-        >
-      </ion-item>
-    </ion-card>
+  <!-- Horizontal card carousel -->
+  <div class="cards-scroll">
+    <!-- Pay Slips -->
+    <div class="card-item">
+      <ion-img
+        class="card-img"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhhi8YZBEV7Arg3hi14gP8pBqNaucIiW6HG6R0e8aEAI9sG93iaPte0oJ9rrnpI6fC648HPqRWPqQNeqlzIcceNY21fMLQTZIYxr-0mK621uaroBzG71boRC7KNb5it-xkGigSXFGJ_ZvgZgbdb-JWCjC-jFgaZ65_rEOnMcUEWKIrax_uukbrEmAV24w_STXsonaeRlKBwZ-8QKJgmGoztwbp4fFwthpXspoaLw4O27e3zmhX9eX4qn-5YolvNiCzbetSGZ2AAfm-"
+      ></ion-img>
+      <h2>Pay Slips</h2>
+      <p>View your pay slips</p>
+    </div>
 
-    <ion-card button routerLink="/tabs/requests">
-      <ion-item lines="none">
-        <ion-avatar slot="start"
-          ><img src="assets/icons/benef.svg"
-        /></ion-avatar>
-        <ion-label
-          ><h2>Beneficios</h2>
-          <p>View your benefits</p></ion-label
-        >
-      </ion-item>
-    </ion-card>
-  </ion-list>
+    <!-- Certificates -->
+    <div class="card-item">
+      <ion-img
+        class="card-img"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuClLHkSGijPfvniFlWAfoBm8oUl2Pi4OK-urqoA5JQbdwby1mF6b6C3gnH3Vxp52djoAcrOze9AcfE8id83djhrO18eVW6wGHZWHPknt8TLJs4UZN0HuJy-No1hKskSWMiUcYN3RTUT_fNHTaO4Vh9-m0b0lqeAc5HuCkWuFRVjb4TUL5zrNNDbzxCTZ2xDnksueky32hNzhXs0KsCHbLQZG7T21Z-593P1odV7CpX2B6iLNWdOPmq4I_wXUzWR9EICTc-QUEtqutUK"
+      ></ion-img>
+      <h2>Certificates</h2>
+      <p>View your certificates</p>
+    </div>
+
+    <!-- Benefits -->
+    <div class="card-item">
+      <ion-img
+        class="card-img"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU07VWdG8IQSh70qi_UfHE4Bg26huRmVxighil8FL3g41sA483cJZej8AMYO46_ppYDuWEBYtGcfTwT0_E6t7Wjn5fBtzwuU8JbY5UsW80JL1GOrncjELosHz36jw8JdMcFreskqXTFIDhZMIZ3WceWzsihDuNqW0sdlHlwKpV9i8JULRYxP_HqAFsb_clKkv0J4wH-t7rpTzoVxfLDNoMAo63mDw72Qt-TQysXM1n1PElfGt7IPaqDKlkdf6SjhEhtmdHwYrE1BhA"
+      ></ion-img>
+      <h2>Benefits</h2>
+      <p>View your benefits</p>
+    </div>
+  </div>
 </ion-content>
