@@ -1,134 +1,74 @@
-// Home page styles
+/* === Fondo gris claro solo en Home === */
+.light-bg {
+  --ion-background-color: #f9fbfb;
+}
 
-.home-bg {
+/* === Header === */
+.profile-avatar {
+  --size: 32px;
+}
+ion-toolbar {
   --background: #f9fbfb;
 }
-
-.home-header {
-  display: flex;
-  align-items: center;
-  background: #f9fbfb;
-  padding: 16px 16px 8px 16px;
-  justify-content: space-between;
-}
-
-.home-avatar-img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAR4kSyN8tfvYngKb9I0UHYBMGwOds_2aa4AAnUX5d45ognzcIpoaNsgCDGjWt1LoLHQRDDzcyB_NYyT5GG_ZmmWMnIcLIqLFybeFTm3K690HuX7KLx6pNIdHBXm8LrOxGhqqyNOs0VYQOz4FonEfXCXWVlen07rsFg5R94bmgj3g94e1eIZWxl8hrJrwQytMJ4PdE_fm-aJiXAc8VSG24ypN3z4l-vylsFKYvicy2jhgTs6dAwtppsdPc4w6jY6SPm5uF9M2C8wrLy");
-  background-size: cover;
-  background-position: center;
-  margin-right: 8px;
-}
-
-.home-title {
-  flex: 1;
+ion-title {
+  font-weight: 700;
   text-align: center;
-  color: #101817;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: -0.015em;
-  margin-right: 40px;
 }
 
-.home-banner {
-  width: 100%;
-  padding: 0 16px;
-  margin-bottom: 0;
+/* === Hero Banner === */
+.hero-wrapper {
+  padding: 0 16px 12px;
 }
-
-.banner-img {
+.hero-wrapper ion-img {
   width: 100%;
-  min-height: 180px;
-  max-height: 220px;
+  height: 218px;
+  border-radius: 14px;
   object-fit: cover;
-  border-radius: 12px;
-  background: #f9fbfb;
+  display: block;
 }
 
-.home-section-title {
-  color: #101817;
+/* === Headline === */
+.section-title {
+  padding: 0 16px 20px;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: -0.015em;
-  padding: 20px 16px 12px 16px;
-  margin: 0;
+  color: var(--ion-color-dark);
 }
 
-.home-cards {
-  padding-left: 8px;
-  padding-bottom: 16px;
-}
-
-.card-benefit {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px #0001;
-  padding: 12px;
-  min-width: 140px;
-  max-width: 180px;
+/* === Horizontal Cards === */
+.cards-scroll {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  gap: 12px;
+  padding: 0 16px 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.cards-scroll::-webkit-scrollbar {
+  display: none;
 }
 
-.card-img-bg {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 8px;
-  background-size: cover;
-  background-position: center;
+.card-item {
+  flex: 0 0 152px;
+  scroll-snap-align: start;
 }
-
-.card-title {
-  color: #101817;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-
-.card-desc {
-  color: #5c8a83;
-  font-size: 13px;
-}
-
-.hero {
+.card-img {
   width: 100%;
-  height: 140px;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
   object-fit: cover;
+  margin-bottom: 10px;
 }
-
-.card-list {
-  padding: 12px;
-}
-
-.card-list ion-card {
-  margin-bottom: 16px;
-}
-
-ion-card {
-  margin: 12px;
-  border-radius: 12px;
-}
-
-ion-avatar img {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-}
-
-ion-label h2 {
+.card-item h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
+  color: var(--ion-color-dark);
 }
-
-ion-label p {
-  margin: 2px 0 0;
-  font-size: 12px;
-  color: #666;
+.card-item p {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--ion-color-medium);
 }
