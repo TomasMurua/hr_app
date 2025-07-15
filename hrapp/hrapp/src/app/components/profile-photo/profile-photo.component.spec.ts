@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
+import { Storage } from '@ionic/storage-angular';
+import { StorageMock } from '../../../testing/storage.mock';
 
 import { ProfilePhotoComponent } from './profile-photo.component';
 
@@ -9,8 +11,8 @@ describe('ProfilePhotoComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProfilePhotoComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [ProfilePhotoComponent, IonicModule.forRoot()],
+      providers: [{ provide: Storage, useClass: StorageMock }],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ProfilePhotoComponent);
